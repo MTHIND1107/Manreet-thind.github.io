@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fef9f4;
+  color: #222;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  font-weight: bold;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  padding: 60px 20px;
+  background: #fdf6ee;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0.2em;
+  text-shadow: 2px 2px #aaa;
+}
+
+hr {
+  width: 100px;
+  border: 2px solid coral;
+  margin-bottom: 1em;
+}
+
+.icons a {
+  margin: 0 10px;
+}
+
+section#about {
+  background: #f4ede3;
+  padding: 40px 20px;
+}
+
+.profile {
+  width: 350px !important;        
+  height: 350px !important;
+  max-width: 90%; 
+  object-fit: contain;
+  margin: 20px auto; 
+  padding: 8px;                /* Slightly more padding */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bigger shadow for effect */
+}
+
+.profile:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+section#about {
+  background: #f4ede3;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  background: #eee;       /* ONLY the email now gets the background */
+  padding: 10px 20px;
+  border-radius: 5px;     /* Optional: makes it rounded */
+  margin-top: 10px;       /* Space above the email line */
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .profile {
+    width: 250px;
+    height: 250px;
+  }
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px; /* Space between icons and email */
+}
+
+.social-icon {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+.linkedin-icon {
+  width: 130px;          /* Make it bigger */
+  margin-top: 60px;      /* Push it down a bit */
+}
+
+.bio {
+  font-size: 1.3rem;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  line-height: 1.8;
+  text-align: center;
+  background: #fcfcfc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+
